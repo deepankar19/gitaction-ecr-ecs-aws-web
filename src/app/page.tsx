@@ -10,7 +10,10 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-foreground text-white">
+      <section
+        className="relative overflow-hidden bg-gray-900 text-white"
+        style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&q=80&w=2000')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 -left-1/4 w-1/2 h-full bg-gradient-to-r from-primary/40 to-transparent rounded-full blur-3xl" />
           <div className="absolute bottom-0 -right-1/4 w-1/2 h-full bg-gradient-to-l from-secondary/40 to-transparent rounded-full blur-3xl" />
@@ -113,7 +116,10 @@ export default function Home() {
 
       {/* Promo Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <div className="relative rounded-3xl overflow-hidden gradient-bg p-8 sm:p-12 lg:p-16">
+        <div
+          className="relative rounded-3xl overflow-hidden p-8 sm:p-12 lg:p-16 text-white"
+          style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1473307682393-4fc2666a4fba?auto=format&fit=crop&q=80&w=2000')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
             <div className="w-full h-full bg-white rounded-full blur-3xl transform translate-x-1/2" />
           </div>
